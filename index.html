@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Exams Score
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <label> Grade Checker </label> <br>
+            <p>This is a simple JavaScript Grace Checker</p>
+            <p>Showing the power and use of Alerts</p>
+                <input placeholder="Score" type="number" id="grade"><br>
+                <button  id="submit" onclick="gradeChecker();"> Check </button> 
+        </div>
+            <script>
+                function gradeChecker() {
+                    let grade = document.getElementById('grade').value;
+                    if (""){
+                        alert('PLEASE PUT A FIGURE')
+                    } 
+                    else if(grade <0 || grade>100){
+                        alert('OUT OF RANGE')
+                    }
+                    else if (grade >=0 && grade <= 29.99){
+                        alert('YOU ARE BIG FAILURE GO HOME. F')
+                    }
+                    else if (grade >=30 && grade <= 39.99){
+                        alert('YOU FAILED HELLO. E')
+                    }
+                    else if (grade >=40 && grade <= 49.99){
+                        alert('YOU FAILED TRY AGAIN D')
+                    }
+                    else if (grade >=50 && grade <= 59.99){
+                        alert('NICE YOU PASSED. C')
+                    }
+                    else if (grade >=60 && grade <= 69.99){
+                        alert('NICE WORK. B')
+                    }
+                    else{
+                        alert('YOU ARE SUCH A BRIGHT STUDENT. A')
+                    }   
+                }
+            </script>
+    </body>
+</html>
